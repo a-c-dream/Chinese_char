@@ -14,7 +14,7 @@ parse.add_argument('--root', type=str, default='/home/chenyiran/character_rec/da
 parse.add_argument('--mode', type=str, default='train', choices=['train', 'validation', 'inference'])
 parse.add_argument('--log_path', type=str, default=os.path.abspath('.') + '/log.pth', help='dir of checkpoints')
 
-#parse.add_argument('--restore', type=bool, default=True, help='whether to restore checkpoints')
+parse.add_argument('--restore', type=bool, default=False, help='whether to restore checkpoints')
 
 parse.add_argument('--batch_size', type=int, default=16, help='size of mini-batch')
 parse.add_argument('--image_size', type=int, default=64, help='resize image')
